@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #202020;
+    color: white;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    gap: 25px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.image-one {
+    background-color: #34495e;
+}
+
+.image-two {
+    background-color: #8e44ad;
+}
+
+.image-three {
+    background-color: #2980b9;
+}
+
+.image-four {
+    background-color: #16a085;
+}
+
+.image-five {
+    background-color: #c0392b;
+}
+
+.image-six {
+    background-color: #7f8c8d;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.project-info span {
+    font-size: 13px;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.featured {
+    grid-column: span 2;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #202020;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .featured {
+        grid-column: span 1;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+}
